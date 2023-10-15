@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <!-- Add ingredients filter -->
+        <record id="view_report_pos_order_search" model="ir.ui.view">
+            <field name="name">report.pos.order.search</field>
+            <field name="model">report.pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_report_pos_order_search" />
+            <field name="arch" type="xml">
+                <filter name="not_invoiced" position="after">
+                    <filter string="Hide Ingredients Sales"
+                            name="hide_ingredients"
+                            domain="['|', ('parent_uuid', '=', False), '&amp;', ('show_sold_modifier_in_sale_report', '=', True), ('parent_uuid', '!=', False)]"/>
+                </filter>
+            </field>
+        </record>
+
+        <!-- Default search ingredients filter -->
+        <record id="point_of_sale.action_report_pos_order_all" model="ir.actions.act_window">
+            <field name="name">Orders Analysis</field>
+            <field name="res_model">report.pos.order</field>
+            <field name="view_mode">graph,pivot</field>
+            <field name="search_view_id" ref="view_report_pos_order_search"/>
+            <field name="context">{'group_by_no_leaf':1, 'group_by':[], 'search_default_hide_ingredients': 1}</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No data yet!
+                </p><p>
+                    Create a new POS order
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

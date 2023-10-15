@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <!-- Product template point of sale form view -->
+        <record id="point_of_sale_product_template_form_view" model="ir.ui.view">
+            <field name="name">product.template.form.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="point_of_sale.product_template_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='available_in_pos']" position="after">
+                    <field name="show_sold_modifier_in_sale_report"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

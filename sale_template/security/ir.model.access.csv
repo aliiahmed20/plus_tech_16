@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mabco_reports_mabco_reports,mabco_reports.mabco_reports,model_mabco_reports_mabco_reports,base.group_user,1,1,1,1

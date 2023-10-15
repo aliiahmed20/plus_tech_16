@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Product template form view -->
+    <record id="product_template_form_view_topping" model="ir.ui.view">
+        <field name="name">product.template.topping.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='options']" position="inside">
+                <div>
+                    <field name="is_selection_combo" />
+                    <label for="is_selection_combo" />
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Product template point of sale form view -->
+    <record id="point_of_sale_product_template_form_view_topping" model="ir.ui.view">
+        <field name="name">product.template.topping.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="point_of_sale.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='sales']" position="inside">
+                <seperator attrs="{'invisible':[('is_selection_combo','=',False)]}">
+                    <h1>Modifiers</h1>
+                </seperator>
+                <group attrs="{'invisible':[('is_selection_combo','=',False)]}">
+                    <field name="product_topping_ids" nolabel="1">
+                        <tree editable="bottom" string="Modifiers">
+                            <field name="product_categ_id"/>
+                            <field name="include_all"/>
+                            <field name="include_price"
+                                   help="Add price of this product to main product when selling it."/>
+                            <field name="description"/>
+                            <field name="product_ids" widget="many2many_tags"/>
+                            <field name="multi_selection" optional="hide"/>
+                            <field name="default_quantity"/>
+                            <field name="no_of_min_items" attrs="{'readonly':[('multi_selection','=',False)]}" optional="hide"/>
+                            <field name="no_of_items" attrs="{'readonly':[('multi_selection','=',False)]}" optional="hide"/>
+                        </tree>
+                    </field>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

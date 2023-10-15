@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="tholol_external_layout_header" inherit_id="web.external_layout_standard">
+            <xpath expr="//div[1]" position="replace">
+                <div id="external_layout_header" class="header">
+                    <div class="container-fluid">
+                        <div class="row" style="direction: rtl;">
+                            <div class="col-4" >
+                                <h4 t-field="company.other_name"/>
+                                <span>VAT No.<span t-field="company.vat"/></span>
+                            </div>
+        
+                            <div class="col-4" >
+                                <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % to_text(company.logo)" style="height: 100px;" />
+                            </div>
+        
+                            <div class="col-4" >
+                                <h3 t-field="company.name"/>
+                                <span>الرقم الضريبي: <span t-field="company.vat"/></span>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </xpath>
+
+            <xpath expr="//div[3]" position="replace">
+                <div class="footer o_standard_footer">
+                    <div class="text-center" style="border-top: 1px solid black;direction: rtl;">
+                        <div class="row" style="font-family: sans-serif;">
+                            <div class="col-12" style="width: 100%;text-align: center;color: #44536a;margin-top: 20px;">
+                                <ul class="" style="margin-right: -50px; ">
+                                    <li class="list-inline-item d-inline">المملكة العربية السعودية</li>
+                                    <li class="list-inline-item d-inline"> - </li>
+                                    <li class="list-inline-item d-inline">الرياض</li>
+                                    <li class="list-inline-item d-inline"> - </li>
+                                    <li class="list-inline-item d-inline"><span t-field="company.street"/></li>
+                                    <li class="list-inline-item d-inline"> - </li>
+                                    <li class="list-inline-item d-inline"> س.ت: <span t-field="company.company_registry"/> </li>
+                                    <br/>
+                                    <li class="list-inline-item d-inline">الرمز البريدي:</li>
+                                    <li class="list-inline-item d-inline"><span t-field="company.zip"/></li>
+                                    <li class="list-inline-item d-inline"> - </li>
+                                    <li class="list-inline-item d-inline">جوال:</li>
+                                    <li class="list-inline-item d-inline"><span t-field="company.phone"/></li>
+                                    <li class="list-inline-item d-inline"> - </li>
+                                    <li class="list-inline-item d-inline">البريد الالكتروني:</li>
+                                    <li class="list-inline-item d-inline"><span t-field="company.email"/></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

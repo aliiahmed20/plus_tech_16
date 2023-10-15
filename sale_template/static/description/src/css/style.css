@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MonixBold';
+    src: local('MonixBold'), local('MonixBold'), url(/sale_template/static/description/src/fonts/PFDinTextUniversal-Regular.otf) format('opentype');
+}
+
+.purchase_font {
+    font-family: MonixBold;
+}

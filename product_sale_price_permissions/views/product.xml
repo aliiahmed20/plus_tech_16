@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="product_normal_form_view_lowest_price" model="ir.ui.view">
+            <field name="name">product.form.edit</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='pricing']" position="after">
+                    <label for="lowest_selling_price" class="mt-1"/>
+                    <div name="lowest_price">
+                        <field name="lowest_selling_price" class="oe_inline" widget='monetary'
+                               options="{'currency_field': 'currency_id', 'field_digits': True}"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_template_form_view_lowest_price" model="ir.ui.view">
+            <field name="name">product.template.form.edit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="account.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='pricing']" position="after">
+                    <label for="lowest_selling_price" class="mt-1"/>
+                    <div name="lowest_price">
+                        <field name="lowest_selling_price" class="oe_inline" widget='monetary'
+                               options="{'currency_field': 'currency_id', 'field_digits': True}"/>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

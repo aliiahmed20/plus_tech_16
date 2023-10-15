@@ -1,0 +1,310 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_modifier
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-16 13:10+0000\n"
+"PO-Revision-Date: 2022-05-16 13:10+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/SelectionComboOrderMenuList.js:0
+#, python-format
+msgid " item from "
+msgstr ""
+
+#. module: pos_modifier
+#: model_terms:ir.ui.view,arch_db:pos_modifier.point_of_sale_product_template_form_view_topping
+msgid "Add price of this product to main product when selling it."
+msgstr "إضافة سعر المنتج هذا للمنتج الرئيسي عند بيعه"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/xml/ProductSelectionPopup.xml:0
+#, python-format
+msgid "Apply"
+msgstr "تطبيق"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__product_categ_id
+msgid "Category"
+msgstr "الفئة"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/xml/ProductSelectionPopup.xml:0
+#, python-format
+msgid "Close"
+msgstr "إغلاق"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__create_uid
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__create_date
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__description
+msgid "Description"
+msgstr "الوصف"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__display_name
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/xml/ProductSelectionPopup.xml:0
+#, python-format
+msgid "Enter Quantity"
+msgstr "الكمية"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line__own_ids
+msgid "Extra Toppings"
+msgstr "إضافات"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__id
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__id
+msgid "ID"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__include_price
+msgid "Include Combo Items Price"
+msgstr "تضمين السعر"
+
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__default_quantity
+msgid "Default Quantity"
+msgstr "الكمية الإفتراضية"
+
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__include_all
+msgid "Include all Products"
+msgstr "تضمين كل المنتجات"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__product_template_id
+msgid "Item"
+msgstr "الصنف"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__price
+msgid "Item Price"
+msgstr "سعر الصنف"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/xml/ProductSelectionPopup.xml:0
+#, python-format
+msgid "Item Price ="
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own____last_update
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__write_uid
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__write_date
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__no_of_items
+msgid "Max Items"
+msgstr "أقصى كمية"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__no_of_min_items
+msgid "Min Items"
+msgstr "أقل كمية"
+
+#. module: pos_modifier
+#: model_terms:ir.ui.view,arch_db:pos_modifier.point_of_sale_product_template_form_view_topping
+msgid "Modifiers"
+msgstr "الإضافات"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__multi_selection
+msgid "Multiple Selection"
+msgstr "إختيار متعدد"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__orderline_id
+msgid "POS Line"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model,name:pos_modifier.model_pos_order_line_own
+msgid "POS Order Line own"
+msgstr ""
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line__parent_uuid
+msgid "Parent UUID"
+msgstr ""
+
+#. module: pos_modifier
+#: code:addons/pos_modifier/models/product_selection_topping.py:0
+#, python-format
+msgid "Please select Category to include all Product In combo."
+msgstr "الرجاء إختيار فئة لتضمين كل منتجاتها"
+
+#. module: pos_modifier
+#: model:ir.model,name:pos_modifier.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "بنود أمر نقطة البيع"
+
+#. module: pos_modifier
+#: model:ir.model,name:pos_modifier.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "أوامر نقطة البيع"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: pos_modifier
+#: model:ir.model,name:pos_modifier.model_product_selection_topping
+msgid "Product Selection Topping"
+msgstr "خيارات إضافية"
+
+#. module: pos_modifier
+#: model:ir.model,name:pos_modifier.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_product__product_topping_ids
+#: model:ir.model.fields,field_description:pos_modifier.field_product_template__product_topping_ids
+msgid "Product Toppings"
+msgstr "إضافات المنتج"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_selection_topping__product_ids
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/xml/ProductSelectionPopup.xml:0
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line_own__qty
+#, python-format
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_product_product__is_selection_combo
+#: model:ir.model.fields,field_description:pos_modifier.field_product_template__is_selection_combo
+msgid "Selection Combo"
+msgstr "إضافات متعددة"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line__is_selection_combo
+msgid "Selection Combo Line"
+msgstr "خيار"
+
+#. module: pos_modifier
+#: model_terms:ir.ui.view,arch_db:pos_modifier.point_of_sale_product_template_form_view_topping
+msgid "Taxes"
+msgstr "الضرائب"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/xml/SelectionComboProductList.xml:0
+#, python-format
+msgid "There are no products in this category."
+msgstr "ليست هناك منتجات في هذه الفئة"
+
+#. module: pos_modifier
+#: model:ir.model.fields,help:pos_modifier.field_product_product__is_selection_combo
+#: model:ir.model.fields,help:pos_modifier.field_product_template__is_selection_combo
+msgid "This will use for Selecting items from Combo Pack"
+msgstr "سيستخدم هذا لاختيار الاصناف كاضافات"
+
+#. module: pos_modifier
+#: model:ir.model.fields,field_description:pos_modifier.field_pos_order_line__selection_topping_uuid
+msgid "UUID"
+msgstr ""
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/SelectionComboOrderMenuList.js:0
+#, python-format
+msgid "Wrong Selection"
+msgstr "إختيار خاطئ"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#, python-format
+msgid "You Have to Select "
+msgstr "يجب عليك إختيار "
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#, python-format
+msgid "You Must Have to Select "
+msgstr "يجب عليك إختيار "
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#, python-format
+msgid "You can not confirm without select any item of min qty > 0 lines!"
+msgstr "لايمكنك التأكيد بدون إختيار كمية أكبر من 0"
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#: code:addons/pos_modifier/static/src/js/SelectionComboOrderMenuList.js:0
+#, python-format
+msgid "You can only select "
+msgstr "يمكنك فقط إختيار "
+
+#. module: pos_modifier
+#. openerp-web
+#: code:addons/pos_modifier/static/src/js/ProductSelectionPopup.js:0
+#, python-format
+msgid "You can only select one item"
+msgstr "يمكنك إختيار صنف واحد فقط "

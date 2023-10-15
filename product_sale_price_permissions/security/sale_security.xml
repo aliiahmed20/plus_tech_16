@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.module.category" id="module_product_sale_price_permissions">
+        <field name="description">Helps you to control prices in sales such as lowest selling price, selling for less
+            than the selling price etc...
+        </field>
+        <field name="name">Product Selling Price</field>
+        <field name="sequence">8</field>
+    </record>
+
+    <record id="group_lowest_selling_price" model="res.groups">
+        <field name="name">Prevent Selling Below Lowest Sale Price</field>
+        <field name="category_id" ref="module_product_sale_price_permissions"/>
+        <!--        <field name="implied_ids" eval="[(4, ref('product_sale_price_permissions.group_prevent_selling_below_product_cost'))]"/>-->
+    </record>
+
+    <record id="group_prevent_selling_below_sale_price" model="res.groups">
+        <field name="name">Prevent Selling below Sale Price</field>
+        <field name="category_id" ref="module_product_sale_price_permissions"/>
+        <field name="implied_ids" eval="[(4, ref('product_sale_price_permissions.group_lowest_selling_price'))]"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MonixBold';
+    /* src: local('MonixBold'), local('MonixBold'), url(/bi_professional_reports_templates/static/src/fonts/Cairo-Regular.ttf) format('opentype'); */
+    src: local('MonixBold'), local('MonixBold'), url(/invoice_templates/static/description/src/fonts/ArbFONTS-DINNEXTLTARABIC-LIGHT-1.ttf) format('opentype');
+}
+
+.h1-title-big {
+    font-family: MonixBold;
+}
